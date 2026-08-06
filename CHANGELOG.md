@@ -1,5 +1,11 @@
 # mattpocock-skills
 
+## 1.2.3
+
+### Patch Changes
+
+- [`66b13ac`](https://github.com/mattpocock/skills/commit/66b13acac15654092711cfaf57ee6350699eaab7) - Store handoff documents under `docs/handoffs/` and architecture review reports under `docs/review/`, creating those directories on first use and prefixing generated filenames with the local date in `yyyyMMdd` format.
+
 ## 1.2.2
 
 ### Patch Changes
