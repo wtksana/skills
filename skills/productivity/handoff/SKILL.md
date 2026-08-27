@@ -7,7 +7,7 @@ disable-model-invocation: true
 
 Write a handoff document summarising the current conversation so a fresh agent can continue the work. Save it under `docs/handoffs/` in the current project, creating the directory if it does not exist. Name it `<yyyyMMdd>-<focus-slug>.md`, using the local creation date and a short kebab-case description of the next session's focus. If that name already exists, append `-2`, `-3`, and so on rather than overwriting it.
 
-Include a "suggested skills" section in the document, which suggests skills that the agent should invoke.
+Include a "suggested skills" section in the document, naming which skills the next agent should call the Skill tool for.
 
 Do not duplicate content already captured in other artifacts (specs, plans, ADRs, issues, commits, diffs). Reference them by path or URL instead.
 
