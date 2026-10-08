@@ -1,6 +1,6 @@
 ## What it does
 
-`prototype` writes **throwaway code that answers a question**: does this state model feel right, or what should this screen look like. The question comes first and decides what you build. A prototype that answers the wrong question is wasted, however good it looks.
+`prototype` writes **throwaway code that answers a question**: does this state model feel right, or what should this screen look like. The question comes first and decides what you build. Project prototypes live under `docs/prototypes/<yyyyMMdd>-<slug>/` on a throwaway branch, while main keeps only the validated decision. A prototype that answers the wrong question is wasted, however good it looks.
 
 Throwaway is a constraint on how the code is *written*, not a promise to destroy it. No tests, no error handling beyond what makes it run, no abstractions, no persistence, because none of that helps you learn the one thing you're trying to learn. Two things survive. The answer goes into the real code, and the prototype goes onto a branch out of main as evidence for the answer.
 

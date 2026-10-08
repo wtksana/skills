@@ -2,7 +2,7 @@
 
 `research` answers a question by reading the sources that own the answer, then leaves a cited Markdown file in the repo. It works only from **[primary sources](https://www.aihero.dev/ai-coding-dictionary/primary-source)**: official docs, source code, specs, first-party APIs. It follows every claim back to the source that owns it, so it will not repeat a blog post's account of an API when the API's own docs are reachable.
 
-It does not answer you in the conversation. The output is a file, written where the repo already keeps such notes, with a link on each claim. You get a document you can react to, hand to another agent, or throw away, rather than an answer that is gone when the [session](https://www.aihero.dev/ai-coding-dictionary/session) ends.
+It does not answer you in the conversation. The output is a cited Markdown file under `docs/research/<yyyyMMdd>-<slug>.md`, with a link on each claim. You get a document you can react to, hand to another agent, or throw away, rather than an answer that is gone when the [session](https://www.aihero.dev/ai-coding-dictionary/session) ends.
 
 ## When to reach for it
 
@@ -26,7 +26,7 @@ The reading runs as a **background agent**. You keep working while it follows ea
 
 Nothing stops the background agent from spawning another background agent of its own. This is the skill's best-documented problem.
 
-The repo decides where the file goes, not the skill. It follows whatever convention already exists for notes. If there is none, it picks a sensible place and tells you where. It writes one file per run.
+Each run writes one file under `docs/research/<yyyyMMdd>-<slug>.md`. The directory is created on first use, and numeric suffixes prevent overwrites.
 
 ## Common questions
 
@@ -38,7 +38,7 @@ The opposite failure also happens. If your own global instructions forbid an age
 
 **Where should the file live, and should I commit it?**
 
-The skill puts the file where the repo already keeps notes and has no further opinion. The community view is mostly settled: keep ADRs, not research files. One Discord thread on this question put it most clearly: "ADRs yes. Everything else archive or delete after done. It otherwise becomes cruft of work and can poison future repo reads if you've drifted away from the spec/research." A research file records what was true on the day it was written, so a stale one is worse than none. On balance, these files don't belong in git, and there is no standard home for them. People use Obsidian, a separate knowledge repo, or the issue tracker instead.
+The skill writes the file under `docs/research/` to follow this fork's project-artifact convention. Research remains a dated working artifact, so archive or remove stale files when the decision is settled; durable conclusions belong in specs or ADRs. One Discord thread on this question put it most clearly: "ADRs yes. Everything else archive or delete after done. It otherwise becomes cruft of work and can poison future repo reads if you've drifted away from the spec/research." A research file records what was true on the day it was written, so a stale one is worse than none. On balance, these files don't belong in git, and there is no standard home for them. People use Obsidian, a separate knowledge repo, or the issue tracker instead.
 
 **What counts as a "high-trust" primary source, and who decides?**
 

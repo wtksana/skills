@@ -5,7 +5,7 @@ description: Build a throwaway prototype to answer a design question. Use when t
 
 # Prototype
 
-A prototype is **throwaway code that answers a question**. The question decides the shape.
+A prototype is **throwaway code that answers a question**. The question decides the shape. Store the runnable prototype under `docs/prototypes/<yyyyMMdd>-<slug>/` when it belongs to this project, creating the date-prefixed directory from the local creation date. Keep the prototype on its throwaway branch, never merge it into main, and remove the directory from main when the question is settled.
 
 ## Pick a branch
 
