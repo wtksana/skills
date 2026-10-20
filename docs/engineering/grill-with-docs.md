@@ -16,7 +16,7 @@ Reach for it at the start of a change, in a repo, when the plan is still fuzzy a
 | A repo, and a change you can settle in one session | `grill-with-docs` |
 | An effort too big to hold in one session (a greenfield build, a large feature) | [wayfinder](https://aihero.dev/skills-wayfinder) |
 | A repo with no domain docs at all, and no particular feature in mind | `grill-with-docs`, aimed at the repo rather than a change |
-| A decision blocked on knowledge in someone else's head | [to-questionnaire](https://aihero.dev/skills-to-questionnaire) |
+| A decision blocked on knowledge in someone else's head | Ask the agent to draft questions for the person who holds the missing information |
 
 The wayfinder split comes down to session count: `/grill-with-docs` for single-session planning, `/wayfinder` for multi-session planning.
 

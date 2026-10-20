@@ -1,0 +1,5 @@
+interface:
+  display_name: "Implement Spec Direct"
+  short_description: "Implement a whole spec with test-after"
+policy:
+  allow_implicit_invocation: false

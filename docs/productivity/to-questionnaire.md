@@ -1,3 +1,5 @@
+> **Archived.** Removed from this fork after v1.3.1. There is no replacement skill; ask the agent directly for the task. This page is retained for reference.
+
 ## What it does
 
 `to-questionnaire` turns a decision you can't settle on your own into a **questionnaire**: a Markdown document you hand to the one person who holds what you're missing, for them to fill in async or for the two of you to work through in a meeting.

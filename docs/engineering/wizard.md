@@ -1,3 +1,5 @@
+> **Archived.** Removed from this fork after v1.3.1. There is no replacement skill; ask the agent directly for the task. This page is retained for reference.
+
 ## What it does
 
 `wizard` generates an interactive bash script that walks a human, step by step, through a manual procedure: wiring up third-party services, running a one-off migration, moving a project from state A to state B. It opens each URL, says what to click and copy, captures what comes back, and writes it into `.env` files and GitHub Actions secrets.
