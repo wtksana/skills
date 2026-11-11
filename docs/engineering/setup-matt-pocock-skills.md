@@ -23,6 +23,10 @@ It writes into the repo you run it in:
 | `triage-labels.md` | `docs/agents/`, only when the `triage` skill is installed |
 | An `## Agent skills` block | whichever of `CLAUDE.md` or `AGENTS.md` already exists |
 
+For GitHub or GitLab, setup verifies that the selected repository is reachable with `gh repo view` or `glab repo view`. If no remote points at that host, it asks for the repository URL and connects it before proceeding. Local markdown needs no remote.
+
+If it finds legacy `CONTEXT.md` or `CONTEXT-MAP.md`, it offers to rename them to `GLOSSARY.md` or `GLOSSARY-MAP.md` with `git mv` and update `docs/agents/domain.md`.
+
 You commit all of it as markdown. There is no user-level or global mode. The config lives in the repo, so every repo gets its own copy.
 
 ## The three decisions

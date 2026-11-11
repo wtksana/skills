@@ -16,7 +16,7 @@ You invoke this by typing `/implement-spec-direct`, and the agent won't reach fo
 
 ## Prerequisites
 
-Provide a spec and tickets with acceptance criteria and dependencies. Tracker-hosted work needs the configured tracker. Parallel execution uses [subagents](https://www.aihero.dev/ai-coding-dictionary/subagent) and independent Git worktrees, as in the original skill.
+Provide a spec and tickets with acceptance criteria and dependencies. Tracker-hosted work needs the configured tracker. Parallel execution uses [subagents](https://www.aihero.dev/ai-coding-dictionary/subagent) and independent Git worktrees, as in the original skill. Every subagent starts with a fresh context window, and each ticket gets a new implementer rather than reusing a previous one. Review fixes also use a fresh implementer.
 
 ## Integration is part of verification
 
